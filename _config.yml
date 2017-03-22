@@ -1,12 +1,12 @@
 # Site Settings
-title: Start Jekyll
-email: taniarascia@gmail.com
+title: Tara McHenry Acupuncture
+email: psauerbeck@gmail.com
 description: >
-  A guide to getting started with Jekyll.
-baseurl: "/startjekyll"
-url: "http://taniarascia.github.io"
-twitter_username: taniarascia
-github_username:  taniarascia
+  Website for Tara McHenry Acupuncture
+baseurl: "/tara-mchenry-acupuncture"
+url: "http://pmsaue0.github.io"
+twitter_username: drink_totemtea
+github_username:  pmsaue0
 # Build Settings
 sass:
   sass_dir: _sass

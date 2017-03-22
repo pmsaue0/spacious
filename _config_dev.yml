@@ -1,12 +1,12 @@
 # Site Settings
-title: Start Jekyll
-email: taniarascia@gmail.com
+title: Tara McHenry Acupuncture
+email: psauerbeck@gmail.com
 description: >
-  A guide to getting started with Jekyll.
+  Website for Tara McHenry Acupuncture
 baseurl: ""
 url: "http://localhost:4000"
-twitter_username: taniarascia
-github_username:  taniarascia
+twitter_username: drink_totemtea
+github_username:  pmsaue0
 # Build Settings
 sass:
   sass_dir: _sass
