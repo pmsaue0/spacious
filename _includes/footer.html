@@ -1,3 +1,6 @@
-<footer>
-	<p>By <a href="http://taniarascia.com">Tania</p>
-</footer>
+<ul>
+  {% for page in site.pages %} {% if page.title %}
+    <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+  {% endif %} {% endfor %}
+  <li><a href="{{ '/blog' | prepend: site.baseurl }}">Blog</a></li>
+</ul>

@@ -1,19 +1,10 @@
-<aside>
-	<div class="container">
-		<nav>
-			<ul>
-				{% for page in site.pages %} {% if page.title %}
-				<li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-				{% endif %} {% endfor %}
-				<li><a href="{{ "/blog" | prepend: site.baseurl }}">Blog</a></li>
-			</ul>
-			</li>
-			</ul>
-		</nav>
-	</div>
-</aside>
-
 <header>
-	<h1><a href="{{ site.baseurl }}">{{ site.title }}</a></h1>
+  <div class="header-content">
+    <div class="header-content-inner">
+      <h1 id="homeHeading">Your Favorite Source of Free Bootstrap Themes</h1>
+      <hr>
+      <p>Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
+      <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+    </div>
+  </div>
 </header>
- 

@@ -13,3 +13,7 @@ sass:
 include: ['_pages']
 kramdown:
   input: GFM
+bootstrap:
+  assets: true
+gems:
+  - jekyll-bootstrap-sass

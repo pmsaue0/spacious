@@ -1,7 +1,5 @@
 ---
-# Front matter comment to ensure Jekyll properly reads file.
 ---
-@import 
-	"base",
-  "layout",
-  "syntax-highlighting"
+@import 'bootstrap-variable-overrides';
+@import 'bootstrap';
+@import 'creative-theme/creative'
