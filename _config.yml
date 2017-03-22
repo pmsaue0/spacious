@@ -13,6 +13,7 @@ github_username:  pmsaue0
 sass:
   load_paths:
     - _scss
+    - _sass
     - ./_scss
 include: ['_pages']
 kramdown:
