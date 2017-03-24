@@ -9,7 +9,7 @@ twitter_username: drink_totemtea
 github_username:  pmsaue0
 # Build Settings
 sass:
-  sass_dir: _sass
+  sass_dir:
 include: ['_pages']
 kramdown:
   input: GFM
