@@ -1,1 +1,2 @@
-gem 'jekyll-bootstrap-sass'
+gem 'github-pages'
+source 'https://rubygems.org'

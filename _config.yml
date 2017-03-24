@@ -8,17 +8,8 @@ url: "http://pmsaue0.github.io"
 twitter_username: drink_totemtea
 github_username:  pmsaue0
 # Build Settings
-# sass:
-#   sass_dir: ./_scss, _scss
 sass:
-  load_paths:
-    - _scss
-    - _sass
-    - ./_scss
+  sass_dir:
 include: ['_pages']
 kramdown:
   input: GFM
-bootstrap:
-  assets: true
-gems:
-  - jekyll-bootstrap-sass
