@@ -13,6 +13,7 @@ hr {
 
 a {
     color: $brand-primary;
+    @include transition(0.35s);
     &:hover,
     &:focus {
         color: darken($brand-primary, 10%);
@@ -55,6 +56,7 @@ aside {
 .navbar-default {
     background-color: white;
     border-color: fade($gray-darker, 5%);
+    @include transition(0.35s);
     .navbar-header .navbar-brand {
         color: $brand-primary;
         font-weight: 700;
@@ -230,6 +232,7 @@ header {
         text-align: center;
         width: 100%;
         height: 100%;
+        @include transition(0.35s);
         .portfolio-box-caption-content {
             width: 100%;
             text-align: center;
