@@ -4,5 +4,5 @@
 $baseurl: '{{ site.baseurl }}';
 
 @import 'bootstrap-variable-overrides';
-@import 'xxx/bootstrap';
+@import 'vendor/bootstrap';
 @import 'theme/creative'
