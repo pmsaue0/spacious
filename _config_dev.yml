@@ -1,11 +1,11 @@
 # Site Settings
-title: Jekyll
+title: Jekyll & Bootstrap 4
 email: psauerbeck@gmail.com
 description: >
-  Website for Tara McHenry Acupuncture
+  Jekyll & Bootstrap 4
 baseurl: ""
 url: "http://localhost:4000"
-twitter_username: drink_totemtea
+twitter_username:
 github_username:  pmsaue0
 # Build Settings
 sass:
