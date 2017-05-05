@@ -1,9 +1,9 @@
 # Site Settings
-title: Jekyll & Bootstrap 4
+title: Neo
 email: psauerbeck@gmail.com
 description: >
-  Jekyll & Bootstrap 4
-baseurl: "/jekyll-bootstrap-4"
+  Neo
+baseurl: "/neo"
 url: "http://pmsaue0.github.io"
 twitter_username:
 github_username:  pmsaue0
