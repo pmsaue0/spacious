@@ -1,7 +1,18 @@
-<nav class="nav">
-  <a href="{{ '/' | prepend: site.baseurl }}" class="nav-link">Home</a>
-  {% for page in site.pages %} {% if page.title %}
-    <a href="{{ page.url | prepend: site.baseurl }}" class="nav-link">{{ page.title }}</a>
-  {% endif %} {% endfor %}
-  <a href="{{ '/blog' | prepend: site.baseurl }}" class="nav-link">Blog</a>
+<nav class="navbar navbar-toggleable-md navbar-inverse">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a href="{{ '/' | prepend: site.baseurl }}" class="navbar-brand">
+    <img src="{{$baseurl}}/assets/images/neo-logo-white.svg" />
+  </a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      {% for page in site.pages %} {% if page.title %}
+        <li class="nav-item">
+          <a href="{{ page.url | prepend: site.baseurl }}" class="nav-link">{{ page.title }}</a>
+        </li>
+      {% endif %} {% endfor %}
+    </ul>
+  </div>
 </nav>

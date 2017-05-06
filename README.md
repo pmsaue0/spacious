@@ -1,12 +1,12 @@
 # Neo public pages
 
-### Get started
+### Build environment
 ```
 gem install bundler
 bundle
 ```
 
-Serve locally with:
+### Serve locally
 ```
 jekyll serve --config _config.yml,_config_dev.yml
 ```

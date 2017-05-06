@@ -1,0 +1,19 @@
+a, button {
+  cursor: pointer;
+}
+
+.navbar-brand {
+  img {
+    height: 80px;
+  }
+}
+
+header {
+  background-size: cover;
+  background-position: center;
+  background-image: url($baseurl + "/assets/images/crystals.png");
+  color: white;
+  .jumbotron {
+    background: none;
+  }
+}
