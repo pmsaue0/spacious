@@ -4,10 +4,10 @@
 
 <body>
   {% include header.html %}
-  <main>
+  <main class="page-{{ page.slug }}">
     {{ content }}
-    {% include footer.html %}
   </main>
+  {% include footer.html %}
 	{% include js-includes.html %}
 </body>
 

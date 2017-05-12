@@ -1,4 +1,4 @@
-a, button {
+a, button, .btn  {
   cursor: pointer;
 }
 
@@ -19,6 +19,21 @@ textarea {
 b,
 strong {
   font-weight: $font-weight-bold;
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// background color and type additions
+//__________________________________
+
+@include bg-variant('.bg-black', $black);
+@include bg-variant('.bg-white', $white);
+
+.font-weight-light {font-weight: $font-weight-light;}
+.font-weight-normal {font-weight: $font-weight-normal;}
+.font-weight-bold {font-weight: $font-weight-bold;}
+.navbar-toggleable-md .navbar-nav .nav-link {
+  padding-right: .8rem;
+  padding-left: .8rem;
 }
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

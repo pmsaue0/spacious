@@ -9,11 +9,10 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
-      {% for page in site.pages %} {% if page.title %}
-        <li class="nav-item">
-          <a href="{{ page.url | prepend: site.baseurl }}" class="nav-link">{{ page.title }}</a>
-        </li>
-      {% endif %} {% endfor %}
+      <li class="nav-item"><a href="{{ '/' | prepend: site.baseurl }}" class="nav-link">Home</a></li>
+      {% assign pages_list = site.pages %}
+      {% assign group = 'nav' %}
+      {% include pages_list %}
     </ul>
   </div>
 </nav>

@@ -195,9 +195,11 @@ $brand-caution:             $yellow;
 
 $link-color:            $brand-secondary;
 $link-decoration:       underline;
-$link-hover-color:      darken($link-color, 10%) !default;
+$link-hover-color:      darken($link-color, 10%);
 $link-hover-decoration: none;
 
+$link-color-white:            rgba($white, 0.8);
+$link-hover-color-white:      $white;
 
 // // Grid breakpoints
 // //

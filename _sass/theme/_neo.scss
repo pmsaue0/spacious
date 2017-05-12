@@ -1,7 +1,29 @@
+$navbar-height: 104px;
+
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1;
+}
+.footer {
+  padding: 20px;
+}
+
+
 .navbar {
   text-transform: uppercase;
+  height: $navbar-height;
   a {
     text-decoration: none;
+    &.active {
+      border-bottom: 2px solid $brand-primary;
+    }
   }
   .navbar-brand {
     img {
@@ -13,29 +35,75 @@
   }
 }
 
-header {
-  background: #EDEFF4 url($baseurl + "/assets/images/neo-focus-hero-wide.jpg") center center no-repeat;
+.jumbotron {
   background-size: cover;
-  min-height: 580px;
+  min-height: 400px;
+  margin-top: -$navbar-height;
   .hero-content {
     text-align: right;
-    margin: 80px 0;
+    margin: 100px 0 80px;
   }
   @include media-breakpoint-down(sm) {
     min-height: auto;
-    background: lighten($brand-secondary, 38%);
+    background-size: auto;
+    background: #EDEFF4 url($baseurl + "/assets/images/graph-paper.png") repeat;
     .hero-content {
-      margin: 50px 0;
+      margin: 120px 0 60px;
       text-align: left;
+      .display-3 {
+        font-size: 2.7rem;
+      }
+      .lead {
+        font-size: 1.25rem;
+      }
       .call-to-action {
         flex-direction: row-reverse;
       }
     }
-    .display-3 {
-      font-size: 2.7rem;
+  }
+}
+
+.content-wrapper {
+  padding-top: 4rem;
+  padding-bottom: 7rem;
+}
+
+main {
+  &.page-index {
+    .jumbotron {
+      background: #EDEFF4 url($baseurl + "/assets/images/neo-focus-hero-wide.jpg") center center no-repeat;
     }
-    .lead {
-      font-size: 1.25rem;
+  }
+  &.page-about, &.page-contact {
+    .jumbotron {
+      background: #EDEFF4 url($baseurl + "/assets/images/graph-paper.png") repeat;
     }
+  }
+}
+
+address {
+  font-size: $font-size-sm;
+  font-weight: $font-weight-light;
+  line-height: 1.3em;
+}
+
+.footer {
+  background-color: $brand-primary;
+  background: linear-gradient(294deg, #F56923 40%, #F57E23 64%);
+  background: -moz-linear-gradient(294deg, #F56923 40%, #F57E23 64%);
+  background: -webkit-linear-gradient(294deg, #F56923 40%, #F57E23 64%);
+  background: -o-linear-gradient(294deg, #F56923 40%, #F57E23 64%);
+  color: $white;
+  font-size: $font-size-sm;
+  a {
+    color: $link-color-white;
+    text-decoration: none;
+    padding: 0;
+    @include hover-focus {
+      color: $link-hover-color-white;
+    }
+  }
+  .footer-brand img {
+    height: 45px;
   }
 }
