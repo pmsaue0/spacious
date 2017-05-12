@@ -8,6 +8,9 @@
       height: 80px;
     }
   }
+  .navbar-toggler-right {
+    top: 35px;
+  }
 }
 
 header {
@@ -17,5 +20,22 @@ header {
   .hero-content {
     text-align: right;
     margin: 80px 0;
+  }
+  @include media-breakpoint-down(sm) {
+    min-height: auto;
+    background: lighten($brand-secondary, 38%);
+    .hero-content {
+      margin: 50px 0;
+      text-align: left;
+      .call-to-action {
+        flex-direction: row-reverse;
+      }
+    }
+    .display-3 {
+      font-size: 2.7rem;
+    }
+    .lead {
+      font-size: 1.25rem;
+    }
   }
 }
