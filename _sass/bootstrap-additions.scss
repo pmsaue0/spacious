@@ -58,6 +58,10 @@ strong {
   @include button-outline-variant($btn-secondary-bg);
 }
 
+.btn {
+  text-decoration: none;
+}
+
 // .btn-outline-default, .btn-outline-primary, .btn-outline-secondary, .btn-outline-white {
 //   background-color: transparent;
 //   opacity: 0.9;
