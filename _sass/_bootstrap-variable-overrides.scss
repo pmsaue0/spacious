@@ -92,31 +92,33 @@
 // // Grayscale and brand colors for use across Bootstrap.
 
 // // Start with assigning color names to specific hex values.
-// $white:  #fff !default;
-// $black:  #000 !default;
-// $red:    #d9534f !default;
-// $orange: #f0ad4e !default;
-// $yellow: #ffd500 !default;
-// $green:  #5cb85c !default;
-// $blue:   #0275d8 !default;
-// $teal:   #5bc0de !default;
-// $pink:   #ff5b77 !default;
-// $purple: #613d7c !default;
+$white:  #FFFEFC;
+$black:  #0C0801;
+$red:    #FF4F37;
+$orange: #FBA21A;
+$yellow: #D9E111;
+$green:  #0BCF78;
+$blue:   #2FADFF;
+$teal:   #12E1BC;
+// $pink:   #ff5b77;
+// $purple: #613d7c;
 
 // // Create grayscale
-// $gray-dark:                 #292b2c !default;
-// $gray:                      #464a4c !default;
-// $gray-light:                #636c72 !default;
-// $gray-lighter:              #eceeef !default;
-// $gray-lightest:             #f7f7f9 !default;
+$gray-dark:                 #292b2c;
+$gray:                      #464a4c;
+$gray-light:                #636c72;
+$gray-lighter:              #eceeef;
+$gray-lightest:             #f7f7f9;
 
 // // Reassign color vars to semantic color scheme
-$brand-primary:             orangered;
-// $brand-success:             $green !default;
-// $brand-info:                $teal !default;
-// $brand-warning:             $orange !default;
-// $brand-danger:              $red !default;
-// $brand-inverse:             $gray-dark !default;
+$brand-primary:             #F56923;
+$brand-secondary:           $blue;
+// $brand-success:             $green;
+$brand-info:                $blue;
+// $brand-warning:             $orange;
+$brand-caution:             $yellow;
+// $brand-danger:              $red;
+// $brand-inverse:             $gray-dark;
 
 
 // // Options
@@ -191,10 +193,10 @@ $brand-primary:             orangered;
 // //
 // // Style anchor elements.
 
-// $link-color:            $brand-primary !default;
-// $link-decoration:       none !default;
-// $link-hover-color:      darken($link-color, 15%) !default;
-// $link-hover-decoration: underline !default;
+$link-color:            $brand-secondary;
+$link-decoration:       underline;
+$link-hover-color:      darken($link-color, 10%) !default;
+$link-hover-decoration: none;
 
 
 // // Grid breakpoints
@@ -244,7 +246,7 @@ $brand-primary:             orangered;
 // //
 // // Font, line-height, and color for body text, headings, and more.
 
-// $font-family-sans-serif: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$font-family-sans-serif: 'Lato', monospace, sans-serif;
 // $font-family-serif:      Georgia, "Times New Roman", Times, serif !default;
 // $font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 // $font-family-base:       $font-family-sans-serif !default;
@@ -254,11 +256,12 @@ $brand-primary:             orangered;
 // $font-size-sm:   .875rem !default;
 // $font-size-xs:   .75rem !default;
 
-// $font-weight-normal: normal !default;
-// $font-weight-bold: bold !default;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 600;
 
 // $font-weight-base: $font-weight-normal !default;
-// $line-height-base: 1.5 !default;
+$line-height-base: 1.5;
 
 // $font-size-h1: 2.5rem !default;
 // $font-size-h2: 2rem !default;
@@ -284,8 +287,8 @@ $brand-primary:             orangered;
 // $display4-weight:     300 !default;
 // $display-line-height: $headings-line-height !default;
 
-// $lead-font-size:   1.25rem !default;
-// $lead-font-weight: 300 !default;
+$lead-font-size:   1.45rem;
+$lead-font-weight: 300;
 
 // $small-font-size: 80% !default;
 
@@ -371,9 +374,17 @@ $brand-primary:             orangered;
 // $btn-primary-bg:                 $brand-primary !default;
 // $btn-primary-border:             $btn-primary-bg !default;
 
-// $btn-secondary-color:            $gray-dark !default;
-// $btn-secondary-bg:               $white !default;
-// $btn-secondary-border:           #ccc !default;
+$btn-secondary-color:            $blue;
+$btn-secondary-bg:               $blue;
+$btn-secondary-border:           $btn-secondary-bg;
+
+$btn-default-color:            $gray-dark;
+$btn-default-bg:               $white;
+$btn-default-border:           $btn-default-bg;
+
+$btn-white-color:            $gray-dark;
+$btn-white-bg:               $white;
+$btn-white-border:           $btn-default-bg;
 
 // $btn-info-color:                 $white !default;
 // $btn-info-bg:                    $brand-info !default;
@@ -396,16 +407,16 @@ $brand-primary:             orangered;
 // $btn-padding-x-sm:               .5rem !default;
 // $btn-padding-y-sm:               .25rem !default;
 
-// $btn-padding-x-lg:               1.5rem !default;
-// $btn-padding-y-lg:               .75rem !default;
+$btn-padding-x-lg:               1.6rem;
+$btn-padding-y-lg:               0.7rem;
 
 // $btn-block-spacing-y:            .5rem !default;
 // $btn-toolbar-margin:             .5rem !default;
 
 // // Allows for customizing button radius independently from global border radius
-// $btn-border-radius:              $border-radius !default;
-// $btn-border-radius-lg:           $border-radius-lg !default;
-// $btn-border-radius-sm:           $border-radius-sm !default;
+$btn-border-radius:              0;
+$btn-border-radius-lg:           0;
+$btn-border-radius-sm:           0;
 
 // $btn-transition:                 all .2s ease-in-out !default;
 
@@ -421,7 +432,7 @@ $brand-primary:             orangered;
 
 // $input-color:                    $gray !default;
 // $input-border-color:             rgba($black,.15) !default;
-// $input-btn-border-width:         $border-width !default; // For form controls and buttons
+$input-btn-border-width:         2px; // For form controls and buttons
 // $input-box-shadow:               inset 0 1px 1px rgba($black,.075) !default;
 
 // $input-border-radius:            $border-radius !default;
@@ -619,12 +630,12 @@ $brand-primary:             orangered;
 // $navbar-inverse-toggler-bg: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-inverse-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"), "#", "%23") !default;
 // $navbar-inverse-toggler-border:        rgba($white,.1) !default;
 
-// $navbar-light-color:                rgba($black,.5) !default;
-// $navbar-light-hover-color:          rgba($black,.7) !default;
-// $navbar-light-active-color:         rgba($black,.9) !default;
-// $navbar-light-disabled-color:       rgba($black,.3) !default;
-// $navbar-light-toggler-bg: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-light-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"), "#", "%23") !default;
-// $navbar-light-toggler-border:       rgba($black,.1) !default;
+$navbar-light-color:                $black;
+$navbar-light-hover-color:          rgba($brand-primary,.7);
+$navbar-light-active-color:         rgba($brand-primary,.9);
+$navbar-light-disabled-color:       rgba($black,.3);
+$navbar-light-toggler-bg: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-light-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"), "#", "%23") !default;
+$navbar-light-toggler-border:       rgba($black,.5) !default;
 
 // // Navs
 

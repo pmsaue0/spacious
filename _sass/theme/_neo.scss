@@ -1,19 +1,21 @@
-a, button {
-  cursor: pointer;
-}
-
-.navbar-brand {
-  img {
-    height: 80px;
+.navbar {
+  text-transform: uppercase;
+  a {
+    text-decoration: none;
+  }
+  .navbar-brand {
+    img {
+      height: 80px;
+    }
   }
 }
 
 header {
+  background: #EDEFF4 url($baseurl + "/assets/images/neo-focus-hero-wide.jpg") center center no-repeat;
   background-size: cover;
-  background-position: center;
-  background-image: url($baseurl + "/assets/images/crystals.png");
-  color: white;
-  .jumbotron {
-    background: none;
+  min-height: 580px;
+  .hero-content {
+    text-align: right;
+    margin: 80px 0;
   }
 }

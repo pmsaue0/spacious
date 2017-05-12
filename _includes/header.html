@@ -1,33 +1,24 @@
 <header>
-  {% include nav.html %}
-  <div class="jumbotron">
-    <h1 class="display-3">Hello, world!</h1>
-    <p class="lead">
-      <!-- Button trigger modal -->
-      <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModal">
-        Home page modal test
-      </button>
-
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              ...
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-          </div>
-        </div>
+  <div class="container mb-4">
+    {% include nav.html %}
+    <div class="hero-content row">
+      <div class="col offset-sm-5">
+        <h1 class="display-3 text-primary"><em>Make smarter loans</em></h1>
+        <p class="lead mb-4">
+          Neo's team specializes in <strong>technology-based solutions</strong>,
+          <br/>
+          providing a <strong>comprehensive scoring system</strong> that
+          <br/>
+          analyzes every aspect of an auto loan.
+        </p>
+        <button type="button" class="btn btn-secondary btn-lg btn-link">
+          Learn more
+        </button>
+        <button type="button" class="btn btn-outline-secondary btn-lg">
+          Contact us
+        </button>
       </div>
-    </p>
+    </div>
   </div>
+  <br class="clearfix" />
 </header>
