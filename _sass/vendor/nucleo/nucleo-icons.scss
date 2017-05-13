@@ -1,0 +1,107 @@
+@import 'nucleo-glyph.css';
+@import 'nucleo-mini.css';
+@import 'nucleo-outline.css';
+
+.nc-center-v {
+  vertical-align: -12%;
+}
+
+.nc-center-v-lg {
+  vertical-align: -24%;
+}
+
+.spin {
+  -webkit-animation: nc-icon-spin 0.7s infinite linear;
+  -moz-animation: nc-icon-spin 0.7s infinite linear;
+  animation: nc-icon-spin 0.7s infinite linear;
+  line-height: 0;
+}
+
+.nc-stack {
+  position: relative;
+  display: inline-block;
+  width: 1.7em;
+  height: 1.7em;
+  line-height: 1.7em;
+  vertical-align: middle;
+  .circle-outline {
+    border: 2px solid;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    &.nc-outline-thin {
+      border-width: 1px;
+    }
+    &.nc-outline-normal {
+      border-width: 2px;
+    }
+    &.nc-outline-thick {
+      border-width: 3px;
+    }
+  }
+  .nc-icon-mini, .nc-icon-outline, .nc-icon-glyph, i {
+    text-align: center;
+    width: 100%;
+    line-height: inherit;
+    left: 0;
+    position: relative;
+  }
+  &.xxxs {
+    line-height: 1.8em;
+  }
+  &.nc-px-md {
+    i {
+      font-size: 0.9em;
+    }
+  }
+}
+// these need to be in ems
+.nc-xxs {
+  font-size: 0.5em;
+}
+.nc-xs {
+  font-size: 0.625em;
+}
+.nc-sm {
+  font-size: 0.750em;
+}
+.nc-md {
+  font-size: 0.875em;
+}
+.nc-lg {
+  font-size: 1.125em;
+}
+.nc-xl {
+  font-size: 1.250em;
+}
+.nc-xxl {
+  font-size: 1.5em;
+}
+
+
+.nc-px-xxxs {
+  font-size: 13px;
+}
+.nc-px-xxs {
+  font-size: 17px;
+}
+.nc-px-xs {
+  font-size: 19px;
+}
+.nc-px-sm {
+  font-size: 24px;
+}
+.nc-px-md {
+  font-size: 32px;
+}
+.nc-px-lg {
+  font-size: 48px;
+}
+.nc-px-xl {
+  font-size: 64px;
+}
+.nc-px-xxl {
+  font-size: 96px;
+}

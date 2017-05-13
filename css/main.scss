@@ -6,4 +6,5 @@ $baseurl: '{{ site.baseurl }}';
 @import 'bootstrap-variable-overrides';
 @import 'vendor/bootstrap/bootstrap';
 @import 'bootstrap-additions';
+@import 'vendor/nucleo/nucleo-icons';
 @import 'theme/neo';
