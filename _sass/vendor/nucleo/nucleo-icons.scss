@@ -1,6 +1,9 @@
-@import 'nucleo-glyph.css';
-@import 'nucleo-mini.css';
-@import 'nucleo-outline.css';
+@import "variables";
+@import "mixins";
+
+// @import 'glyph/nucleo-glyph';
+// @import 'mini/nucleo-mini';
+@import 'outline/nucleo-outline';
 
 .nc-center-v {
   vertical-align: -12%;
@@ -78,6 +81,31 @@
 }
 .nc-xxl {
   font-size: 1.5em;
+}
+
+.nc-rem-xxxs {
+  font-size: .25rem;
+}
+.nc-rem-xxs {
+  font-size: .5rem;
+}
+.nc-rem-xs {
+  font-size: .75rem;
+}
+.nc-rem-sm {
+  font-size: .9rem;
+}
+.nc-rem-md {
+  font-size: 1.5rem;
+}
+.nc-rem-lg {
+  font-size: 2rem;
+}
+.nc-rem-xl {
+  font-size: 2.9rem;
+}
+.nc-rem-xxl {
+  font-size: 5.2rem;
 }
 
 

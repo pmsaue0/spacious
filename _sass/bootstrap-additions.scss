@@ -27,6 +27,7 @@ strong {
 
 @include bg-variant('.bg-black', $black);
 @include bg-variant('.bg-white', $white);
+@include bg-variant('.bg-secondary', $brand-secondary);
 
 .font-weight-light {font-weight: $font-weight-light;}
 .font-weight-normal {font-weight: $font-weight-normal;}
