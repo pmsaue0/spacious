@@ -27,11 +27,14 @@ main {
   }
   .navbar-brand {
     img {
-      height: 80px;
+      height: 70px;
+      @include media-breakpoint-down(sm) {
+        height: 60px;
+      }
     }
   }
   .navbar-toggler-right {
-    top: 35px;
+    top: 21px;
   }
 }
 
@@ -72,6 +75,9 @@ main {
   &.page-index {
     .jumbotron {
       background: #EDEFF4 url($baseurl + "/assets/images/neo-focus-hero-wide.jpg") center center no-repeat;
+      @include media-breakpoint-down(sm) {
+        background: #EDEFF4 url($baseurl + "/assets/images/graph-paper.png") repeat;
+      }
     }
   }
   &.page-about, &.page-contact {
