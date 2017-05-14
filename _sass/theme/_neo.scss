@@ -1,5 +1,3 @@
-$navbar-height: 104px;
-
 html {
   height: 100%;
 }
@@ -27,11 +25,13 @@ hr.hr-mini {
 
 .navbar {
   text-transform: uppercase;
-  height: $navbar-height;
   a {
     text-decoration: none;
     &.active {
       border-bottom: 2px solid $brand-primary;
+      @include media-breakpoint-down(sm) {
+        border-bottom: none;
+      }
     }
   }
   .navbar-brand {
@@ -47,20 +47,19 @@ hr.hr-mini {
   }
 }
 
-.jumbotron {
+header.hero, .body-index header {
   background-size: cover;
   min-height: 400px;
-  margin-top: -$navbar-height;
   .hero-content {
     text-align: right;
-    margin: 100px 0 80px;
+    margin: 65px 0 100px;
   }
   @include media-breakpoint-down(sm) {
     min-height: auto;
     background-size: auto;
     background: #EDEFF4 url($baseurl + "/assets/images/graph-paper.png") repeat;
     .hero-content {
-      margin: 120px 0 60px;
+      margin: 50px 0 65px;
       text-align: left;
       .display-3 {
         font-size: 2.7rem;
@@ -76,23 +75,19 @@ hr.hr-mini {
 }
 
 .content-wrapper {
-  padding-top: 4rem;
-  padding-bottom: 7rem;
+  padding-top: 1rem;
+  padding-bottom: 5rem;
 }
 
-main {
-  &.page-index {
-    .jumbotron {
-      background: #EDEFF4 url($baseurl + "/assets/images/neo-focus-hero-wide.jpg") center center no-repeat;
-      @include media-breakpoint-down(sm) {
-        background: #EDEFF4 url($baseurl + "/assets/images/graph-paper.png") repeat;
-      }
-    }
+.body-index header{
+  background: #EDEFF4 url($baseurl + "/assets/images/neo-focus-hero-wide.jpg") center center no-repeat;
+  @include media-breakpoint-down(sm) {
+    background: #EDEFF4 url($baseurl + "/assets/images/graph-paper.png") repeat;
   }
-  &.page-about, &.page-contact {
-    .jumbotron {
-      background: #EDEFF4 url($baseurl + "/assets/images/graph-paper.png") repeat;
-    }
+}
+.body-about, .body-contact {
+  header {
+    background: #EDEFF4 url($baseurl + "/assets/images/graph-paper.png") repeat;
   }
 }
 
