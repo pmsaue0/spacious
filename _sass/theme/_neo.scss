@@ -90,6 +90,14 @@ header.hero, .body-index header {
     background: #EDEFF4 url($baseurl + "/assets/images/graph-paper.png") repeat;
   }
 }
+.team {
+  background: $gray-lightest;
+  .teammate-name {
+    h4 {
+      margin: 1rem 0 .5rem;
+    }
+  }
+}
 
 address {
   font-size: $font-size-sm;
