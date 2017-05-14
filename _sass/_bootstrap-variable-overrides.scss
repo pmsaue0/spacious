@@ -92,8 +92,6 @@
 // // Grayscale and brand colors for use across Bootstrap.
 
 // // Start with assigning color names to specific hex values.
-$white:  #FFFEFC;
-$black:  #0C0801;
 $red:    #FF4F37;
 $orange: #FBA21A;
 $yellow: #D9E111;
@@ -104,11 +102,23 @@ $teal:   #12E1BC;
 // $purple: #613d7c;
 
 // // Create grayscale
-$gray-dark:                 #292b2c;
-$gray:                      #464a4c;
-$gray-light:                #636c72;
-$gray-lighter:              #eceeef;
-$gray-lightest:             #f7f7f9;
+$black:  #0C0801;
+$gray-1: #231E18;
+$gray-2: #48443F;
+$gray-3: #6D6A65;
+$gray-4: #85827E;
+$gray-5: #BBB9B5;
+$gray-6: #DCDAD7;
+$gray-7: #F4F2F0;
+$white:  #FFFEFC;
+
+$gray-darkest:              $gray-1;
+$gray-darker:               $gray-2;
+$gray-dark:                 $gray-3;
+$gray:                      $gray-4;
+$gray-light:                $gray-5;
+$gray-lighter:              $gray-6;
+$gray-lightest:             $gray-7;
 
 // // Reassign color vars to semantic color scheme
 $brand-primary:             #F56923;
@@ -118,7 +128,7 @@ $brand-info:                $blue;
 // $brand-warning:             $orange;
 $brand-caution:             $yellow;
 // $brand-danger:              $red;
-// $brand-inverse:             $gray-dark;
+$brand-inverse:             $gray-darker;
 
 
 // // Options
@@ -188,8 +198,8 @@ $spacers: (
 // // Settings for the `<body>` element.
 
 // $body-bg:       $white !default;
-// $body-color:    $gray-dark !default;
-// $inverse-bg:    $gray-dark !default;
+$body-color:    $gray-darkest;
+$inverse-bg:    $gray-darker;
 // $inverse-color: $gray-lighter !default;
 
 
@@ -298,7 +308,7 @@ $lead-font-weight: 300;
 
 // $small-font-size: 80% !default;
 
-// $text-muted: $gray-light !default;
+$text-muted: $gray;
 
 // $abbr-border-color: $gray-light !default;
 

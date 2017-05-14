@@ -38,7 +38,7 @@ hr.hr-mini {
     img {
       height: 70px;
       @include media-breakpoint-down(sm) {
-        height: 60px;
+        height: 55px;
       }
     }
   }
@@ -54,18 +54,26 @@ header.hero, .body-index header {
     text-align: right;
     margin: 65px 0 100px;
   }
+  @include media-breakpoint-down(md) {
+    .display-3 {
+      font-size: 4.1rem;
+    }
+    .lead {
+      font-size: 1.35rem;
+    }
+  }
   @include media-breakpoint-down(sm) {
     min-height: auto;
     background-size: auto;
     background: #EDEFF4 url($baseurl + "/assets/images/graph-paper.png") repeat;
     .hero-content {
-      margin: 50px 0 65px;
+      margin: 40px 0 65px;
       text-align: left;
       .display-3 {
-        font-size: 2.7rem;
+        font-size: 2.5rem;
       }
       .lead {
-        font-size: 1.25rem;
+        font-size: 1.1rem;
       }
       .call-to-action {
         flex-direction: row-reverse;
@@ -93,8 +101,11 @@ header.hero, .body-index header {
 .team {
   background: $gray-lightest;
   .teammate-name {
-    h4 {
-      margin: 1rem 0 .5rem;
+    margin: 1rem 0 .5rem;
+    font-weight: $font-weight-light;
+    small {
+      color: $gray;
+      font-size: .65em;
     }
   }
 }
