@@ -63,11 +63,40 @@ strong {
   text-decoration: none;
 }
 
-// .btn-outline-default, .btn-outline-primary, .btn-outline-secondary, .btn-outline-white {
-//   background-color: transparent;
-//   opacity: 0.9;
-//   @include hover-focus {
-//     background-color: transparent;
-//     opacity: 1;
-//   }
-// }
+//refactor with maps
+.btn-outline-white {
+  background-color: transparent;
+  opacity: 0.9;
+  @include hover-focus {
+    background-color: transparent;
+    color: $white;
+    opacity: 1;
+  }
+}
+.btn-outline-default {
+  background-color: transparent;
+  opacity: 0.9;
+  @include hover-focus {
+    background-color: transparent;
+    color: $gray;
+    opacity: 1;
+  }
+}
+.btn-outline-primary {
+  background-color: transparent;
+  opacity: 0.9;
+  @include hover-focus {
+    background-color: transparent;
+    color: $brand-primary;
+    opacity: 1;
+  }
+}
+.btn-outline-secondary {
+  background-color: transparent;
+  opacity: 0.9;
+  @include hover-focus {
+    background-color: transparent;
+    color: $brand-secondary;
+    opacity: 1;
+  }
+}

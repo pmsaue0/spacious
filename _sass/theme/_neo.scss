@@ -47,8 +47,17 @@ hr.hr-mini {
   }
 }
 
+// for heros with big image
+
+.body-index header {
+  background-image: url($baseurl + "/assets/images/neo-focus-hero-wide.jpg");
+}
+
 header.hero, .body-index header {
+  background-color: #EDEFF4;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   min-height: 400px;
   .hero-content {
     text-align: right;
@@ -64,8 +73,9 @@ header.hero, .body-index header {
   }
   @include media-breakpoint-down(sm) {
     min-height: auto;
+    background-image: url($baseurl + "/assets/images/graph-paper.png");
     background-size: auto;
-    background: #EDEFF4 url($baseurl + "/assets/images/graph-paper.png") repeat;
+    background-repeat: repeat;
     .hero-content {
       margin: 40px 0 65px;
       text-align: left;
@@ -82,43 +92,46 @@ header.hero, .body-index header {
   }
 }
 
+// for heros with repeated images
+
+.body-about, .body-contact, .body-consumer-report {
+  header {
+    background-image: url($baseurl + "/assets/images/graph-paper.png");
+    background-size: auto;
+    background-repeat: repeat;
+  }
+}
+
+
+
 .content-wrapper {
   padding-top: 1rem;
   padding-bottom: 5rem;
 }
 
-.body-index header{
-  background: #EDEFF4 url($baseurl + "/assets/images/neo-focus-hero-wide.jpg") center center no-repeat;
-  @include media-breakpoint-down(sm) {
-    background: #EDEFF4 url($baseurl + "/assets/images/graph-paper.png") repeat;
-  }
-}
-.body-about, .body-contact {
-  header {
-    background: #EDEFF4 url($baseurl + "/assets/images/graph-paper.png") repeat;
-  }
-}
-.team {
-  background: $gray-lightest;
-  .teammate-name {
-    margin: 1rem 0 .5rem;
-    font-weight: $font-weight-light;
-    small {
-      color: $gray;
-      font-size: .65em;
+main {
+  .team {
+    background: $gray-lightest;
+    .teammate-name {
+      margin: 1rem 0 .5rem;
+      font-weight: $font-weight-light;
+      small {
+        color: $gray;
+        font-size: .65em;
+      }
     }
   }
-}
-
-.consumer-report {
-  background: #EDEFF4 url($baseurl + "/assets/images/neo-working.jpg") center center no-repeat;
-}
-
-.contact-us {
-  .responsive-text-align {
-    text-align: right;
-    @include media-breakpoint-down(sm) {
-      text-align: left;
+  .consumer-report {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url($baseurl + "/assets/images/neo-working.jpg");
+  }
+  .contact-us {
+    .responsive-text-align {
+      text-align: right;
+      @include media-breakpoint-down(sm) {
+        text-align: left;
+      }
     }
   }
 }
