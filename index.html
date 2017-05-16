@@ -44,20 +44,20 @@ slug: index
   <br class="clearfix" />
 </div>
 
-<div class="py-5 consumer-report">
+<div class="py-6 consumer-report">
   <div class="container">
     <div class="row">
-      <div class="col-md-6">
-        <h4 class="display-4 text-right font-weight-light">
+      <div class="col-md-6 text-white">
+        <h4 class="display-4 font-weight-light">
           Making an impact <br> in the market
         </h4>
-        <p class="lead mb-4 text-right">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua.
+        <p class="lead font-weight-thin mb-4">
+          Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit
         </p>
-      </div>
-      <div class="col-md-6">
-        View the thing with icon
+        <a href="{{ '/consumer-report' | prepend: site.baseurl }}" class="btn btn-outline-white btn-lg">
+          Read our consumer report
+        </a>
       </div>
     </div>
   </div>
@@ -80,18 +80,19 @@ slug: index
   <br class="clearfix" />
 </div>
 
-<div class="py-5 consumer-report">
+<div class="py-5 contact-us">
   <div class="container">
-    <h2 class="display-4 text-center mb-3">Get in touch</h2>
-    <hr class="hr-mini">
-    <div class="row justify-content-center">
+    <div class="row">
+      <div class="col-md-6 responsive-text-align">
+        <h2 class="display-4 text-primary">Get in touch with us</h2>
+        <p>
+          We'd love to talk with you about how we can help your business approve more loans, more intelligently
+        </p>
+      </div>
       <div class="col-md-6">
-        <h4 class="text-muted text-center font-weight-light mb-6">
-          Left col form, right col greeting and subtext
-        </h4>
+        {% include contact-form.html %}
       </div>
     </div>
-    CONTENT
   </div>
   <br class="clearfix" />
 </div>

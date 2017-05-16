@@ -110,6 +110,19 @@ header.hero, .body-index header {
   }
 }
 
+.consumer-report {
+  background: #EDEFF4 url($baseurl + "/assets/images/neo-working.jpg") center center no-repeat;
+}
+
+.contact-us {
+  .responsive-text-align {
+    text-align: right;
+    @include media-breakpoint-down(sm) {
+      text-align: left;
+    }
+  }
+}
+
 address {
   font-size: $font-size-sm;
   font-weight: $font-weight-light;
