@@ -62,6 +62,12 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    @include media-breakpoint-down(sm) {
+      min-height: auto;
+      background-image: url($baseurl + "/assets/images/graph-paper.png");
+      background-size: auto;
+      background-repeat: repeat;
+    }
   }
 
   .hero-content {
@@ -77,10 +83,6 @@ header {
     }
   }
   @include media-breakpoint-down(sm) {
-    min-height: auto;
-    background-image: url($baseurl + "/assets/images/graph-paper.png");
-    background-size: auto;
-    background-repeat: repeat;
     .hero-content {
       margin: 40px 0 65px;
       text-align: left;
