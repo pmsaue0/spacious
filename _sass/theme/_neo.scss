@@ -49,16 +49,21 @@ hr.hr-mini {
 
 // for heros with big image
 
-.body-index header {
-  background-image: url($baseurl + "/assets/images/neo-focus-hero-wide.jpg");
-}
-
-header.hero, .body-index header {
+header {
   background-color: #EDEFF4;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   min-height: 400px;
+  &.hero {
+    background-image: url($baseurl + "/assets/images/graph-paper.png");
+    background-size: auto;
+    background-repeat: repeat;
+  }
+  &.splash-hero {
+    background-image: url($baseurl + "/assets/images/neo-focus-hero-wide.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
   .hero-content {
     text-align: right;
     margin: 65px 0 100px;
@@ -94,7 +99,7 @@ header.hero, .body-index header {
 
 // for heros with repeated images
 
-.body-about, .body-contact, .body-consumer-report {
+.body-about, .body-contact, .body-consumers, .body-privacy, .body-terms {
   header {
     background-image: url($baseurl + "/assets/images/graph-paper.png");
     background-size: auto;

@@ -1,4 +1,4 @@
-<header {% if page.hero-message %} class="hero"{% endif %}>
+<header {% if page.hero-message %} class="hero" {% elsif page.slug == "index" %} class="splash-hero"{% endif %}>
   <div class="container">
     {% include nav.html %}
   </div>
