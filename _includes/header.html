@@ -2,7 +2,7 @@
   <div class="container">
     {% include nav.html %}
   </div>
-  <div class="container mb-4">
+  <div class="container">
     {% if page.slug == "index" %}
       <div class="hero-content">
         <h1 class="display-3 text-primary">
@@ -24,23 +24,19 @@
           </a>
         </div>
       </div>
-    {% else %}
-      {% if page.hero-message %}
-        <div class="hero-content">
-          <h1 class="display-3 text-primary">{{ page.hero-message }}</h1>
-          {% if page.hero-subtext %}
-            <div class="row justify-content-end">
-              <div class="col-12 col-md-7">
-                <p class="lead mb-4">
-                  {{ page.hero-subtext }}
-                </p>
-              </div>
+    {% elsif page.hero-message %}
+      <div class="hero-content">
+        <h1 class="display-3 text-primary">{{ page.hero-message }}</h1>
+        {% if page.hero-subtext %}
+          <div class="row justify-content-end">
+            <div class="col-12 col-md-7">
+              <p class="lead mb-4">
+                {{ page.hero-subtext }}
+              </p>
             </div>
-          {% endif %}
-        </div>
-      {% else %}
-        <h1 class="display-4 text-primary mt-4">{{ page.title }}</h1>
-      {% endif %}
+          </div>
+        {% endif %}
+      </div>
     {% endif %}
   </div>
 </header>

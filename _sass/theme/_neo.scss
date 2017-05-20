@@ -49,15 +49,29 @@ hr.hr-mini {
 
 // for heros with big image
 
+
+.graph-paper {
+  background-image: url($baseurl + "/assets/images/graph-paper.png");
+  background-size: auto;
+  background-repeat: repeat;
+}
+
 header {
-  background-color: #EDEFF4;
-  min-height: 400px;
+  background-color: $off-white;
+  margin-bottom: 2rem;
+  padding-bottom: 2px;
   &.hero {
+    min-height: 300px;
     background-image: url($baseurl + "/assets/images/graph-paper.png");
     background-size: auto;
     background-repeat: repeat;
+    .hero-content {
+      text-align: right;
+      margin: 35px 0 100px;
+    }
   }
   &.splash-hero {
+    min-height: 400px;
     background-image: url($baseurl + "/assets/images/neo-focus-hero-wide.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -68,12 +82,12 @@ header {
       background-size: auto;
       background-repeat: repeat;
     }
+    .hero-content {
+      text-align: right;
+      margin: 65px 0 100px;
+    }
   }
 
-  .hero-content {
-    text-align: right;
-    margin: 65px 0 100px;
-  }
   @include media-breakpoint-down(md) {
     .display-3 {
       font-size: 4.1rem;
@@ -82,18 +96,20 @@ header {
       font-size: 1.35rem;
     }
   }
-  @include media-breakpoint-down(sm) {
-    .hero-content {
-      margin: 40px 0 65px;
-      text-align: left;
-      .display-3 {
-        font-size: 2.5rem;
-      }
-      .lead {
-        font-size: 1.1rem;
-      }
-      .call-to-action {
-        flex-direction: row-reverse;
+  &.hero, &.spash-hero {
+    @include media-breakpoint-down(sm) {
+      .hero-content {
+        margin: 40px 0 65px;
+        text-align: left;
+        .display-3 {
+          font-size: 2.5rem;
+        }
+        .lead {
+          font-size: 1.1rem;
+        }
+        .call-to-action {
+          flex-direction: row-reverse;
+        }
       }
     }
   }
@@ -141,6 +157,11 @@ main {
         text-align: left;
       }
     }
+  }
+  .contact-us {
+    padding: 5rem 0;
+    border-top: 1px solid;
+    border-color: lighten($brand-secondary, 25%)
   }
 }
 
