@@ -1,18 +1,19 @@
 <nav class="navbar navbar-toggleable-md navbar-light">
-  <!-- <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
-  </button> -->
+  </button>
   <a href="{{ '/' | prepend: site.baseurl }}" class="navbar-brand">
-    <!-- <img src="{{$baseurl}}/assets/images/neo-logo.svg" /> -->
-    <img src="https://cdn.rawgit.com/pmsaue0/neo/gh-pages/assets/images/neo-logo.svg" />
+    <img src="{{$baseurl}}/assets/images/spacious-logo.svg" />
+    <!-- Use rawgit for serving svg with github pages -->
+    <!-- <img src="https://cdn.rawgit.com/pmsaue0/neo/gh-pages/assets/images/spacious-logo.svg" /> -->
   </a>
 
-<!--   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item"><a href="{{ '/' | prepend: site.baseurl }}" class="nav-link">Home</a></li>
       {% assign pages_list = site.pages %}
       {% assign group = 'nav' %}
       {% include pages_list %}
     </ul>
-  </div> -->
+  </div>
 </nav>

@@ -58,7 +58,7 @@ header {
     background-repeat: repeat;
   }
   &.splash-hero {
-    background-image: url($baseurl + "/assets/images/neo-focus-hero-wide.jpg");
+    background-image: url($baseurl + "/assets/images/spacious-hero.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -152,10 +152,10 @@ address {
 
 .footer {
   background-color: $brand-primary;
-  background: linear-gradient(294deg, #F56923 40%, #F57E23 64%);
-  background: -moz-linear-gradient(294deg, #F56923 40%, #F57E23 64%);
-  background: -webkit-linear-gradient(294deg, #F56923 40%, #F57E23 64%);
-  background: -o-linear-gradient(294deg, #F56923 40%, #F57E23 64%);
+  background: linear-gradient(294deg, #006e94 40%, #006588 64%);
+  background: -moz-linear-gradient(294deg, #006e94 40%, #006588 64%);
+  background: -webkit-linear-gradient(294deg, #006e94 40%, #006588 64%);
+  background: -o-linear-gradient(294deg, #006e94 40%, #006588 64%);
   color: $white;
   font-size: $font-size-sm;
   a {

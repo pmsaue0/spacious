@@ -1,9 +1,9 @@
 # Site Settings
-title: Neo
-email: psauerbeck@gmail.com
+title: Spacious
+email:
 description: >
-  Neo
-baseurl: "/neo"
+  Spacious bootstrap & Jekyll 4 template
+baseurl: "/spacious"
 url: "http://pmsaue0.github.io"
 twitter_username:
 github_username:  pmsaue0
