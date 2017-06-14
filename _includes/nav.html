@@ -3,15 +3,17 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <a href="{{ '/' | prepend: site.baseurl }}" class="navbar-brand">
-    <img src="{{$baseurl}}/assets/images/spacious-logo.svg" />
+    <!-- <img src="{{$baseurl}}/assets/images/spacious-logo.svg" /> -->
     <!-- Use rawgit for serving svg with github pages -->
-    <!-- <img src="https://cdn.rawgit.com/pmsaue0/neo/gh-pages/assets/images/spacious-logo.svg" /> -->
+    <img src="https://cdn.rawgit.com/pmsaue0/spacious/gh-pages/assets/images/spacious-logo.svg" />
   </a>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item"><a href="{{ '/' | prepend: site.baseurl }}" class="nav-link">Home</a></li>
-      <li class="nav-item"><a href="{{ '/' | prepend: site.baseurl }}" class="nav-link">Log in</a></li>
+      {% assign pages_list = site.pages %}
+      {% assign group = 'nav' %}
+      {% include pages_list %}
     </ul>
   </div>
 </nav>
